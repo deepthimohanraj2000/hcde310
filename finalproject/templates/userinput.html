@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Form</title>
+    <link rel="stylesheet" href="/static/userinput.css">
+</head>
+<body>
+<!--suppress HtmlUnknownTarget -->
+    <div class="container">
+        <h2>Find Weather Information for Any City</h2> <br><br>
+        <form action ="wresponse" method ="get">
+            <label for="city">Name of City: </label>
+            <input type="text" id="city" name="city"> <br><br>
+            <input type="radio" id="Celcius" value="Celcius" name="units">
+            <label for="Celcius">Celcius</label>
+            <input type="radio" id="Farenheit" value="Farenheit" name="units">
+            <label for="Farenheit">Farenheit</label> <br><br>
+            <label for="daily">Enter number of days(1-8)</label>
+            <input type="text" id="daily" name="daily"> <br><br>
+            <label for="hourly">Enter number of hours(1-48)</label>
+            <input type="text" id="hourly" name="hourly"> <br><br>
+            <input type="submit" value="Go" name="gobtn"/>
+        </form>
+    </div>
+</body>
+</html>
